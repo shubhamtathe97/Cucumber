@@ -1,0 +1,239 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-21T06:09:55.249Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2877000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User is able to Open the browser, navigate to the URL and Search for Product",
+        "description": "",
+        "id": "e-commerce-project-website-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
+        "after": [
+          {
+            "result": {
+              "duration": 672000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Browser navigated to URL: https://amazon.in",
+              "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+            ],
+            "result": {
+              "duration": 5398000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User navigate to the home page of the application url",
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.user_navigate_to_the_home_page_of_the_application_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Product Searched: Headphone",
+              "Clicked on the GO butotn"
+            ],
+            "result": {
+              "duration": 2292000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User search for a product \"Headphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Headphone\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.visionit.automation.stepdefs.StepDefs.user_search_for_a_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Page title validation successfull: Amazon.in : Headphone"
+            ],
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Search product is displayed",
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.search_product_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@healthcheck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-21T06:10:06.626Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1151000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User is click on the Product and check the Product Details",
+        "description": "",
+        "id": "e-commerce-project-website-health-check;user-is-click-on-the-product-and-check-the-product-details",
+        "after": [
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Browser navigated to URL: https://amazon.in",
+              "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+            ],
+            "result": {
+              "duration": 4150000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User navigate to the home page of the application url",
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.user_navigate_to_the_home_page_of_the_application_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Product Searched: Laptop",
+              "Clicked on the GO butotn"
+            ],
+            "result": {
+              "duration": 2582000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User search for a product \"Laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptop\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.visionit.automation.stepdefs.StepDefs.user_search_for_a_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Number of products searched: 22",
+              "Click on the first Link in the List. Link Text: Lenovo Yoga Slim 7 11th Gen Intel Core i7 14 inches FHD IPS Touchscreen Fabric Surface Thin and Light Laptop (16GB/1TB SSD/Win 10 Home/Office/Iris Graphics/Fingerprint Reader/Slate Grey/1.33Kg)"
+            ],
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click on any product",
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.user_click_on_any_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "List of windows found: 2",
+              "Windows handles: [CDwindow-796D67ED23D5796A72A1E18CC8C2A2F3, CDwindow-B3EB74257C9133D44A3B02BD3F5CAAF0]",
+              "Switched to the new window/tab",
+              "Product Title header is matched and displayed as: Lenovo Yoga Slim 7 11th Gen Intel Core i7 14 inches FHD IPS Touchscreen Fabric Surface Thin and Light Laptop (16GB/1TB SSD/Win 10 Home/Office/Iris Graphics/Fingerprint Reader/Slate Grey/1.33Kg)",
+              "Add to cart Button is displayed",
+              "Switched back to Original tab"
+            ],
+            "result": {
+              "duration": 5194000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Product Description is displayed in new tab",
+            "match": {
+              "location": "com.visionit.automation.stepdefs.StepDefs.product_description_is_displayed_in_new_tab()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@healthcheck"
+          }
+        ]
+      }
+    ],
+    "name": "E-commerce project website health check",
+    "description": "",
+    "id": "e-commerce-project-website-health-check",
+    "keyword": "Feature",
+    "uri": "classpath:features/HealthCheck.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@healthcheck",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    ]
+  }
+]
