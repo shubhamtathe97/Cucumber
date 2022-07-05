@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -51,7 +53,7 @@ public class StepDefs {
 
 		cmnPageObjects = new CmnPageObjects(driver, scn);
 		searchPageObjects = new SearchPageObjects(driver, scn);
-		
+
 	}
 
 
@@ -68,7 +70,7 @@ public class StepDefs {
 	@Given("User navigate to the home page of the application url")
 	public void user_navigate_to_the_home_page_of_the_application_url() {
 
-		
+
 		WebDriverFactory.navigateToTheUrl(base_url);
 		scn.log("Browser navigated to URL: " + base_url);
 		cmnPageObjects.validateLandingPageTitle();
@@ -78,22 +80,22 @@ public class StepDefs {
 	public void user_search_for_a_product(String productName) {
 
 		//Wait and Search for product
-				cmnPageObjects.searchProduct(productName);
-				cmnPageObjects.clickOnSearchBtn();
+		cmnPageObjects.searchProduct(productName);
+		cmnPageObjects.clickOnSearchBtn();
 	}
 
 	@Then("Search product is displayed")
 	public void search_product_is_displayed() {
 
 		//Wait for titile
-				searchPageObjects.validateSearchPageTitle();
+		searchPageObjects.validateSearchPageTitle();
 	}
 
 	@When("User click on any product")
 	public void user_click_on_any_product() {
 
 		//listOfProducts will have all the links displayed in the search box
-				searchPageObjects.clickOnFirstProd();
+		searchPageObjects.clickOnFirstProd();
 	}
 
 
@@ -107,7 +109,7 @@ public class StepDefs {
 
 		scn.log("List of windows found: "+Handles.size());
 		logger.info("List of windows found: "+Handles.size());
-		
+
 		scn.log("Windows handles: " + Handles.toString());
 		logger.info("Windows handles: " + Handles.toString());
 
@@ -143,15 +145,42 @@ public class StepDefs {
 	// make sure to use this after import io.cucumber.java.After;
 	// Use @After to execute steps to be executed after each scnerio
 	// one example can be to close the browser
-	@After
+	@After(order=1)
 	public void cleanUp(){
-		
+
 		WebDriverFactory.quitDriver();	
 	}
 
 
 
-
+	//1. Screen shot capturing is a important part of test cases failure investigation.
+	//2. When test cases fails, we need to give the evidence to the person who is investigating the report of the test execution.
+	//3. There can be many screen shot capturing strategies. like:
+	//     -Take one screen shot when test case end (pass or fail)
+	//     -Take screen shot after each line of the scenario.
+	//     -Take screen shot as soon as a step fails.
+	//4. Usually taking screen shot when scenario/step fails is more resonable and commonly used strategy.
+	//5. To implement it we will need to know at run time if the test is pass or fail.
+	//6. If the test is pass we will choose not to take a screen shot.
+	//7. If the test fails we will take the screenshot and attach it with the native report.
+	//8. Then can be achieved in cucumber using 'Scenario' Object injected in @After method.
+	//9. So we have added another After method (you can have many after methods)
+	//10.However we need to make sure, that this after method gets executed before above After method, otherwise browser will be closed by above after method and screen shot will not be captured.
+	//11.To run this @After method first, we need to add the argument 'order' to this method's annotation.
+	//12. Giving this method order as 2, means it will always execute first, and then giving order as 1 to the above after method.
+	//    Order number is the order in which this hook should run. Higher numbers are run first. The default order is 10000.
+	//13. Now since we need to capture the screen shot only after a test is failed, we will put a if condition as check the failure using method 'isFailed'.
+	//14. If test is failed it will take the screen shot and attach the screen shot with the report. For this s.attach method is used. (in old version, method name was embed)
+	@After(order=2)
+	public void takeScreenShot(Scenario s) {
+		if (s.isFailed()) {
+			TakesScreenshot scrnShot = (TakesScreenshot)driver;
+			byte[] data = scrnShot.getScreenshotAs(OutputType.BYTES);
+			scn.attach(data, "image/png","Failed Step Name: " + s.getName());
+		}else{
+			scn.log("Test case is passed, no screen shot captured");
+		}
+	}
 
 
 
