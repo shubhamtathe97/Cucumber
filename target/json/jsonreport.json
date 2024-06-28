@@ -15,7 +15,7 @@
               "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
             ],
             "result": {
-              "duration": 3427693000,
+              "duration": 3334906400,
               "status": "passed"
             },
             "line": 14,
@@ -28,11 +28,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-02T03:48:10.492Z",
+        "start_timestamp": "2022-07-09T07:08:27.600Z",
         "before": [
           {
             "result": {
-              "duration": 19392336400,
+              "duration": 2187729000,
               "status": "passed"
             },
             "match": {
@@ -50,7 +50,7 @@
               "Test case is passed, no screen shot captured"
             ],
             "result": {
-              "duration": 999600,
+              "duration": 1995100,
               "status": "passed"
             },
             "match": {
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3456326800,
+              "duration": 131118900,
               "status": "passed"
             },
             "match": {
@@ -76,7 +76,7 @@
               "Clicked on the GO butotn"
             ],
             "result": {
-              "duration": 1852321800,
+              "duration": 3113553000,
               "status": "passed"
             },
             "line": 35,
@@ -97,7 +97,7 @@
               "Page title validation successfull: Amazon.in : Headphone"
             ],
             "result": {
-              "duration": 17949000,
+              "duration": 45036600,
               "status": "passed"
             },
             "line": 36,
@@ -130,7 +130,7 @@
               "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
             ],
             "result": {
-              "duration": 6518509400,
+              "duration": 10594771200,
               "status": "passed"
             },
             "line": 14,
@@ -143,11 +143,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-02T03:48:38.780Z",
+        "start_timestamp": "2022-07-09T07:08:36.501Z",
         "before": [
           {
             "result": {
-              "duration": 6527271600,
+              "duration": 1336914600,
               "status": "passed"
             },
             "match": {
@@ -165,7 +165,6 @@
               "Test case is passed, no screen shot captured"
             ],
             "result": {
-              "duration": 998600,
               "status": "passed"
             },
             "match": {
@@ -174,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 7757652500,
+              "duration": 304187800,
               "status": "passed"
             },
             "match": {
@@ -191,7 +190,7 @@
               "Clicked on the GO butotn"
             ],
             "result": {
-              "duration": 1656218100,
+              "duration": 5969557100,
               "status": "passed"
             },
             "line": 40,
@@ -210,10 +209,10 @@
           {
             "output": [
               "Number of products searched: 22",
-              "Click on the first Link in the List. Link Text: Acer Aspire 3 Intel Core i3 11th Generation 15.6-inch (39.6 cms) Full HD Laptop - (8 GB/256 GB SSD/Windows 11 Home/Intel UHD Graphics /1.7 Kg/Silver) A315-58"
+              "Click on the first Link in the List. Link Text: HP Pavilion 14 11th Gen Intel Core i5 14 inch(35.6 cm) Laptop, 8GB RAM/512GB SSD FHD IPS Micro-Edge Display/Iris Xe Graphics/Backlit KB/B\u0026O Audio/Alexa/Windows 11 Home/Thin \u0026 Light/1.41kg, 14-dv1000TU"
             ],
             "result": {
-              "duration": 601184600,
+              "duration": 235383100,
               "status": "passed"
             },
             "line": 41,
@@ -226,14 +225,14 @@
           {
             "output": [
               "List of windows found: 2",
-              "Windows handles: [819957bb-304c-4370-bb57-b8ecb90e8b4b, 904de96b-0b67-4399-9509-6cf1eed38ab5]",
+              "Windows handles: [CDwindow-265C4C5C5489EB77CEBFE45FC867F369, CDwindow-71A15E2A179E51EEA76B7BC65D195482]",
               "Switched to the new window/tab",
-              "Product Title header is matched and displayed as: Acer Aspire 3 Intel Core i3 11th Generation 15.6-inch (39.6 cms) Full HD Laptop - (8 GB/256 GB SSD/Windows 11 Home/Intel UHD Graphics /1.7 Kg/Silver) A315-58",
+              "Product Title header is matched and displayed as: HP Pavilion 14 11th Gen Intel Core i5 14 inch(35.6 cm) Laptop, 8GB RAM/512GB SSD FHD IPS Micro-Edge Display/Iris Xe Graphics/Backlit KB/B\u0026O Audio/Alexa/Windows 11 Home/Thin \u0026 Light/1.41kg, 14-dv1000TU",
               "Add to cart Button is displayed",
               "Switched back to Original tab"
             ],
             "result": {
-              "duration": 5655037200,
+              "duration": 9577493300,
               "status": "passed"
             },
             "line": 42,
@@ -266,7 +265,7 @@
               "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
             ],
             "result": {
-              "duration": 6819099600,
+              "duration": 4905285800,
               "status": "passed"
             },
             "line": 14,
@@ -279,11 +278,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-02T03:49:07.515Z",
+        "start_timestamp": "2022-07-09T07:09:04.530Z",
         "before": [
           {
             "result": {
-              "duration": 6406581000,
+              "duration": 2181894500,
               "status": "passed"
             },
             "match": {
@@ -309,7 +308,7 @@
           },
           {
             "result": {
-              "duration": 2574659700,
+              "duration": 146923100,
               "status": "passed"
             },
             "match": {
@@ -326,7 +325,7 @@
               "Clicked on the GO butotn"
             ],
             "result": {
-              "duration": 1558267700,
+              "duration": 2843905400,
               "status": "passed"
             },
             "line": 63,
@@ -347,7 +346,7 @@
               "Page title validation successfull: Amazon.in : laptop"
             ],
             "result": {
-              "duration": 19947800,
+              "duration": 367029900,
               "status": "passed"
             },
             "line": 64,
@@ -383,7 +382,7 @@
               "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
             ],
             "result": {
-              "duration": 5198861800,
+              "duration": 5281345100,
               "status": "passed"
             },
             "line": 14,
@@ -396,11 +395,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-02T03:49:24.901Z",
+        "start_timestamp": "2022-07-09T07:09:14.994Z",
         "before": [
           {
             "result": {
-              "duration": 5356874600,
+              "duration": 1519910900,
               "status": "passed"
             },
             "match": {
@@ -426,7 +425,7 @@
           },
           {
             "result": {
-              "duration": 3124206200,
+              "duration": 563104400,
               "status": "passed"
             },
             "match": {
@@ -443,7 +442,7 @@
               "Clicked on the GO butotn"
             ],
             "result": {
-              "duration": 1367953900,
+              "duration": 5772039000,
               "status": "passed"
             },
             "line": 63,
@@ -464,7 +463,7 @@
               "Page title validation successfull: Amazon.in : earphone"
             ],
             "result": {
-              "duration": 40891200,
+              "duration": 44523300,
               "status": "passed"
             },
             "line": 64,
@@ -500,7 +499,7 @@
               "Page title validation successfull. Actual title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
             ],
             "result": {
-              "duration": 3649598600,
+              "duration": 16693812300,
               "status": "passed"
             },
             "line": 14,
@@ -513,11 +512,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-02T03:49:40.010Z",
+        "start_timestamp": "2022-07-09T07:09:28.184Z",
         "before": [
           {
             "result": {
-              "duration": 5413452000,
+              "duration": 3502574400,
               "status": "passed"
             },
             "match": {
@@ -543,7 +542,7 @@
           },
           {
             "result": {
-              "duration": 3786865100,
+              "duration": 130305000,
               "status": "passed"
             },
             "match": {
@@ -560,7 +559,7 @@
               "Clicked on the GO butotn"
             ],
             "result": {
-              "duration": 1656950700,
+              "duration": 4360204900,
               "status": "passed"
             },
             "line": 63,
@@ -581,7 +580,7 @@
               "Page title validation successfull: Amazon.in : computer"
             ],
             "result": {
-              "duration": 21940500,
+              "duration": 38322800,
               "status": "passed"
             },
             "line": 64,

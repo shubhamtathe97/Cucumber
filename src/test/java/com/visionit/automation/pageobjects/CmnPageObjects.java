@@ -38,6 +38,7 @@ public class CmnPageObjects {
 		Assert.assertEquals("Page Title validation",expected,actual);
 		scn.log("Page title validation successfull. Actual title: " + actual );
 		logger.info("Page title validation successfull. Actual title: " + actual );
+		
 	}	
 	
 	public void searchProduct(String productName)

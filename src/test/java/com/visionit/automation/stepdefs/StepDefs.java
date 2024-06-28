@@ -82,6 +82,7 @@ public class StepDefs {
 		//Wait and Search for product
 		cmnPageObjects.searchProduct(productName);
 		cmnPageObjects.clickOnSearchBtn();
+		
 	}
 
 	@Then("Search product is displayed")

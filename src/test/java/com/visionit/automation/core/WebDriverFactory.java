@@ -75,7 +75,7 @@ public class WebDriverFactory {
 	
 
 	public static String getBrowserName(){
-		String browserDefault = "firefox"; //Set by default
+		String browserDefault = "chrome"; //Set by default
 		String browserSentFromCmd = System.getProperty("browser");
 
 		if (browserSentFromCmd==null){
